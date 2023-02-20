@@ -51,7 +51,7 @@ body {
 
 .photograph {
   display: flex;
-  border: 10px solid #c3c3ae;
+  /* border: 10px solid #c3c3ae; */
   align-items: center;
   justify-content: center;
   max-width: 100%;

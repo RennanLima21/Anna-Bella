@@ -1,14 +1,17 @@
+* {
+  padding: 0;
+}
+
 body {
   background: #d2d2c1 url("imagens/fundo.png");
   font-size: 16px Arial, Helvetica, sans-serif;
 }
-
 .wrapper {
-  
   display: flex;
   justify-content: center;
   flex-direction: column;
-  width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .menu {
@@ -22,17 +25,13 @@ body {
   padding: 10px;
 }
 
-.content h1 {
-  text-align: center;
-  color: #4b566a;
-}
-
 .content h2 {
   text-align: center;
   color: #4b566a;
 }
 
 .content p {
+  font-size: 18px;
   text-align: justify;
 }
 
@@ -45,13 +44,129 @@ body {
   padding: 5px;
 }
 
-.photograph{
+.menu a:hover {
+  color: #01112f;
+  text-decoration: underline;
+}
+
+.photograph {
   display: flex;
   border: 10px solid #c3c3ae;
   align-items: center;
   justify-content: center;
+  max-width: 100%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
 }
 
+.links-contato a {
+  display: flex;
+  text-decoration: none;
+  align-items: center;
+  color: #4b566a;
+}
+
+.links-contato a:hover {
+  color: #010409;
+}
+
+.links-contato ul {
+  display: flex;
+  
+  align-items: center;
+  justify-content:center;
+  list-style: none;
+  text-decoration: none;
+  font-size: 30px;
+  gap: 50px;
+  padding: 0;
+  
+}
 .footer {
   text-align: center;
+}
+
+@media screen and (min-width: 1024px) {
+  body {
+    background: #d2d2c1 url("imagens/fundo.png");
+    font-size: 16px Arial, Helvetica, sans-serif;
+  }
+
+  .wrapper {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .menu {
+    background: #c5c5b2;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .content {
+    background: #e8e8d9;
+    padding: 10px;
+  }
+
+  .content h2 {
+    text-align: center;
+    color: #4b566a;
+  }
+
+  .content p {
+    text-align: justify;
+  }
+
+  .menu a {
+    color: #4b566a;
+    font-size: 20px;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 5px;
+  }
+
+  .menu a:hover {
+    color: #01112f;
+    text-decoration: none;
+  }
+
+  .photograph {
+    display: flex;
+    border: 10px solid #c3c3ae;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .links-contato a {
+    display: flex;
+    text-decoration: none;
+    align-items: center;
+    color: #4b566a;
+  }
+
+  .links-contato a:hover {
+    color: #010409;
+  }
+
+  .links-contato ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    text-decoration: none;
+    font-size: 30px;
+    gap: 50px;
+    padding: 0;
+  }
+  .footer {
+    text-align: center;
+  }
 }
